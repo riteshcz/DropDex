@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-username/your-repo
+  repo: riteshcz/DropDex
   branch: main  # Change if using a different branch
 
 media_folder: "images/uploads"  # Where images are stored
