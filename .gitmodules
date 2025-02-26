@@ -1,0 +1,3 @@
+[submodule "dropdex/themes/ananke"]
+	path = dropdex/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git

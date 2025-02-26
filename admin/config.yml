@@ -1,15 +1,14 @@
 backend:
-  name: github
-  repo: riteshcz/DropDex
+  name: git-gateway
   branch: main
 
-media_folder: "static/images"
-public_folder: "/images"
+media_folder: "static/img"
+public_folder: "/img"
 
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "content/posts"
+  - name: "blog"
+    label: "Blog"
+    folder: "src/posts"
     create: true
     fields:
       - { name: title, label: Title, widget: string }

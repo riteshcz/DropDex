@@ -1,12 +1,23 @@
+<!-- admin/index.html -->
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>DropDex Content Manager</title>
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        </head>
-        <body>
-          <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-          </body>
-          </html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DropDex Content Manager</title>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</head>
+<body>
+  <script>
+    CMS.init({
+      config: {
+        backend: {
+          name: "git-gateway",
+          repo: "your-username/your-repo-name", // Your GitHub repo
+          branch: "main", // Your default branch
+        },
+      },
+    });
+  </script>
+</body>
+</html>
