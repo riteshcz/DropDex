@@ -7,7 +7,7 @@ backend:
   public_folder: "/images"
 
   collections:
-   - name: "posts"
+  - name: "posts"
   label: "Posts"
   folder: "content/posts"
   create: true
