@@ -37,7 +37,7 @@ body{
 .logo img{
     width: 2rem;
     height: 2rem;
-    padding-top: 0.4rem;
+    padding-top: 0.5rem;
     padding-right: 0.2rem;
 }
 .hdr a{
@@ -111,7 +111,7 @@ body{
       text-decoration: none;
     }
     .result a:hover {
-      text-decoration: underline;
+      text-decoration: white;
     }
     .result p {
         max-width: 40ch;
