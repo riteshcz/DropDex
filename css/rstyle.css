@@ -41,7 +41,7 @@ body{
     padding-right: 0.2rem;
 }
 .hdr a{
-      padding-top:0.1rem;
+      padding-top:-0.1rem;
     display: inline-flex;
     font-size: 2rem;
     text-decoration: none;
