@@ -139,3 +139,51 @@ fetchResults();
   window.addEventListener('online', updateOnlineStatus);
   window.addEventListener('offline', updateOnlineStatus);
 
+function performSearch() {
+    const query = searchQuery.value || resultsSearchQuery.value;
+    if (!query) return;
+    
+    // Update page title
+    document.title = `${query} - SearchEngine`;
+    
+    currentQuery = query;
+    currentPage = 1;
+    
+    // Rest of your existing code...
+    updateUrl(query);
+    showResultsPage(query);
+    fetchSearchResults(query);
+}
+window.addEventListener('popstate', function(event) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('q');
+    
+    if (query) {
+        document.title = `${query} - SearchEngine`;
+        showResultsPage(query);
+        resultsSearchQuery.value = query;
+        currentQuery = query;
+        fetchSearchResults(query);
+    } else {
+        document.title = 'SearchEngine - DropDex';
+        homePage.style.display = 'flex';
+        resultsPage.style.display = 'none';
+        searchQuery.value = '';
+        searchQuery.focus();
+    }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('q');
+    
+    if (query) {
+        document.title = `${query} - SearchEngine`;
+        showResultsPage(query);
+        resultsSearchQuery.value = query;
+        currentQuery = query;
+        fetchSearchResults(query);
+    } else {
+        document.title = 'SearchEngine - DropDex';
+        searchQuery.focus();
+    }
+});
