@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search Result</title
+  <link rel="stylesheet" href="css/rstyle.css">
+  <link rel="icon" href="src/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="hdr">
+         <a href="/" class="logo"><img src="src/logo.png"><b>earchDex</b></a>
+      </div>
+      <div class="sbr">
+           <form id="searchForm" action="result.html" class="srch-box">
+          <i class="fas fa-search"></i>
+          <input type="text" name="q" class="inpt" id="searchInput" type="text" required/>
+          <button type="submit" class="btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <div class="rslt">
+    
+    <div id="results"></div>
+    <button id="loadMore">Load More</button>
+  </div>
+  
+<script src="js/r.js"></script>
+<div class="ofm" id="ofm">
+You are offline. Please check your internet connection.
+</div>
+</body>
+</html>
