@@ -111,7 +111,7 @@ body{
       text-decoration: none;
     }
     .result a:hover {
-      text-decoration: white;
+      text-decoration: none;
     }
     .result p {
         max-width: 40ch;
