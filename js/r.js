@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const query = urlParams.get('q');
     
     if (query) {
-        document.title = `${query} - SearchEngine`;
+        document.title = `${query} - DropDex`;
         showResultsPage(query);
         resultsSearchQuery.value = query;
         currentQuery = query;
