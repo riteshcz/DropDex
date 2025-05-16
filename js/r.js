@@ -84,7 +84,7 @@ function fetchResults() {
           return;
         }
         renderResults(data.items);
-        startIndex += 20;
+        startIndex += 10;
         
         if (data.items.length < 10) {
           document.getElementById('loadMore').style.display = 'none';
