@@ -57,10 +57,10 @@ function fetchResults() {
           return;
         }
         renderResults(data.items);
-        startIndex += 20;
+        startIndex += 10;
         
         // Show or hide load more button based on whether there might be more results
-        if (data.items.length < 20) {
+        if (data.items.length < 10) {
           document.getElementById('loadMore').style.display = 'none';
         }
       })
@@ -86,7 +86,7 @@ function fetchResults() {
         renderResults(data.items);
         startIndex += 20;
         
-        if (data.items.length < 20) {
+        if (data.items.length < 10) {
           document.getElementById('loadMore').style.display = 'none';
         }
       })
