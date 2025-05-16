@@ -60,7 +60,7 @@ function fetchResults() {
         startIndex += 10;
         
         // Show or hide load more button based on whether there might be more results
-        if (data.items.length < 10) {
+        if (data.items.length < 20) {
           document.getElementById('loadMore').style.display = 'none';
         }
       })
