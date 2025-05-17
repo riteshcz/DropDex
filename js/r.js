@@ -106,7 +106,7 @@ function renderResults(items) {
     const imgHTML = thumb ? `<img src="${thumb}" class="thumbnail"/>` : '';
     div.innerHTML = `
             ${imgHTML}
-            <a href="${item.link}" target="_blank">${item.title}</a><br>
+            <a href="${item.link}" target="_self">${item.title}</a><br>
             <p style="display: inline-block; max-width: 30ch; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;font-size:12px;color:#ffffff;">${item.link}</p>
             <p>${item.snippet}</p>
         `;
@@ -187,6 +187,4 @@ document.addEventListener('DOMContentLoaded', function() {
         searchQuery.focus();
     }
 });
-  document.querySelectorAll('a').forEach(link => {
-    link.setAttribute('target', '_self');
-  });
+  
