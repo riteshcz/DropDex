@@ -187,3 +187,6 @@ document.addEventListener('DOMContentLoaded', function() {
         searchQuery.focus();
     }
 });
+  document.querySelectorAll('a').forEach(link => {
+    link.setAttribute('target', '_self');
+  });
